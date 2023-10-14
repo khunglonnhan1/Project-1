@@ -23,6 +23,7 @@ body {
 /* Common */
 
 a {
+  color: inherit;
   text-decoration: none;
 }
 
@@ -137,7 +138,7 @@ a {
 }
 
 .hero .info .desc {
-  min-width: 550px;
+  width: 550px;
   color: #5a6473;
   font-size: 1.8rem;
   font-weight: 400;
@@ -232,6 +233,7 @@ a {
 }
 
 .guides .list-guide {
+  column-gap: 140px;
   margin-top: 70px;
 }
 
@@ -242,7 +244,6 @@ a {
 }
 
 .list-guide .guide-item {
-  margin: 0 70px;
   text-align: center;
 }
 
@@ -315,7 +316,8 @@ a {
 }
 
 .list-featured .list {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   margin-top: 70px;
   gap: 30px;
 }
@@ -582,7 +584,8 @@ a {
 }
 
 .footer .row {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
   justify-content: space-between;
 }
 
@@ -621,6 +624,8 @@ a {
 }
 
 .footer .row-bottom {
+  display: flex;
+  justify-content: space-between;
   margin-top: 81px;
 }
 
